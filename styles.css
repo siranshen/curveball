@@ -1,0 +1,285 @@
+@font-face {
+	font-family:"Lato";
+	src:url("fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+	font-family:"Museo300Regular";
+	src:url("fonts/Museo300-Regular.otf");
+}
+
+body {
+	font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h2 {
+	font-family:"Museo300Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight:900;
+	letter-spacing:1.6px;
+	margin-bottom:26px;
+	font-size:220%;
+}
+
+ul {
+	list-style-type:none;
+}
+
+textarea {
+	resize:vertical;
+	max-height:120px;
+}
+
+.row li {
+	float:left;
+}
+
+a:hover {
+	cursor:pointer;
+}
+
+.popover {
+	font:inherit;
+	letter-spacing:0.2px;
+}
+
+.navbar {
+	z-index:100;
+}
+
+.navbar, .navbar button, .modal-title, .media-heading, #signUpBtn, .auth-form-header, .text-capitalized {
+	text-transform:uppercase;
+	font-size:13px;
+	font-weight:700;
+	letter-spacing:0.8px;
+}
+
+.media-heading a:hover {
+	text-decoration:none;
+}
+
+.navbar-inverse {
+	background-color:#30302F;
+	border-color:#30302F;
+}
+
+.max-width-container {
+	max-width:1100px;
+}
+
+.navbar-brand {
+	height:46px;
+	width:150px;
+	background:url("images/logo.png") no-repeat;
+	background-size:150px 46px;
+	margin-left:9px;
+}
+
+.selected a {
+	color:#FFFFFF !important;
+}
+
+.ycenter {
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	-ms-transform:translateY(-50%); /* IE 9 */
+   	-webkit-transform:translateY(-50%); /* Safari */
+}
+
+.xcenter {
+	position: relative;
+	left:50%;
+	transform:translateX(-50%);
+	-ms-transform:translateX(-50%); /* IE 9 */
+	-webkit-transform:translateX(-50%); /* Safari */
+}
+
+.center-text {
+	text-align:center;
+}
+
+.h2-margin-right {
+	margin-right:11px;
+}
+
+#loader-wrapper {
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:#131315;
+	z-index:1000;
+}
+
+@keyframes loading {
+	0% {width:100px; height:100px;}
+	50% {width:130px; height:130px;}
+	100% {width:100px; height:100px;}
+}
+
+#loader {
+	width:100px;
+	height:100px;
+	background:url("images/loading.gif") no-repeat;
+	background-image:url("images/loading.svg"), none;
+	z-index:1001;
+	animation-name:loading;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+}
+
+#home {
+	background-image:url("images/bgimg-sm.jpg");
+	min-height:400px;
+	max-height:1000px;
+	width:100%;
+	background-size:cover;
+	background-position:left bottom;
+	color:#FFFFFF;
+}
+
+.letterSpacing {
+	letter-spacing:0.5px;
+}
+
+#homeRow {
+	margin-top:70px;
+}
+
+.wrapper {
+	width:100%;
+	background-color:#E3E5E6;
+}
+
+.row-1 {
+	margin-top:70px;
+}
+
+.row-2 {
+	margin:25px 0 80px 0;
+}
+
+.media-offset {
+	margin-bottom:15px;
+}
+
+.media-offset-lg {
+	margin-bottom:30px;
+}
+
+.media-object {
+	width:100px;
+	height:100px;
+}
+
+.media-body {
+	font-size:13.5px;
+	letter-spacing:0.2px;
+}
+
+#secretLink {
+	float:right;
+	position:relative;
+	right:4px;
+	bottom:8px;
+}
+
+#projects img{
+	margin-right:9px;
+}
+
+.hide-sm {
+	display:none;
+}
+
+.contacts-image {
+	width:40px;
+	height:40px;
+	float:left;
+	margin:4px 4px 2px 2px;
+}
+
+#footerWrapper {
+	background:url("images/footerbg.jpg") no-repeat;
+	width:100%;
+	background-size:cover;
+}
+
+#footer {
+	padding:60px 0 20px 10px;
+}
+
+#subscribeForm {
+	float:left;
+	min-width:100px;
+	margin:0 20px 17px 3px;
+}
+
+#confirmBtn {
+	float:left;
+}
+
+#signInForm {
+	margin:5px 8px 5px 8px;
+	text-transform:none;
+	font-size:13px;
+}
+
+.dropdown-form {
+	min-width:220px;
+}
+
+.dropdown-menu .form-group {
+	margin-bottom:8px;
+}
+
+.greeting span{
+	text-transform:none;
+}
+
+/* larger devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	#homeRow {
+		margin-top:145px;
+	}
+	
+	.letterSpacing {
+		letter-spacing:0.7px;		
+	}
+	
+	.row-1 {
+		margin-top:90px;
+	}
+	
+	.row-2 {
+		margin:35px 0 140px 0;
+	}
+	
+	.media-object {
+		width:130px;
+		height:130px;
+	}
+	
+	.media-body {
+		font-size:15.5px;
+		letter-spacing:0.2px;
+	}
+	
+	#projects img{
+		margin-right:15px;
+	}
+	
+	.hide-sm {
+		display:inline;
+	}
+	
+	.contacts-image {
+		width:85px;
+		height:85px;
+		float:left;
+		margin:6px 16px 2px 2px;
+	}
+	
+	#subscribeForm {
+		width:270px;
+	}
+}
